@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "start": "node ./index.js",
+    "build": "rm -rf build/puppeteer && pkg . --output build/qimai.exe",
+    "postbuild": "cp -R ./node_modules/puppeteer/.local-chromium build/puppeteer",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "webpack": "^4.44.1"
+  },
+  "dependencies": {
+    "js-export-excel": "^1.1.4",
+    "puppeteer": "^5.3.0"
+  }
+}
